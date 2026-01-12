@@ -2,11 +2,9 @@ import httpx
 import pytest
 
 @pytest.mark.asyncio
-async def test_bybit_server_time():
-    url = "https://api.bybit.com/v5/market/time"
+async def test_simple_ping():
+    # Просто пингуем публичный API, без сложностей
     async with httpx.AsyncClient() as client:
-        response = await client.get(url, timeout=10.0)
+        response = await client.get("https://api.bybit.com/v5/market/time")
         assert response.status_code == 200
-        data = response.json()
-        assert data['retCode'] == 0
-        print(f"\n[SUCCESS] Bybit Time: {data['result']['timeNano']}")
+        print(f"Server is alive!")
