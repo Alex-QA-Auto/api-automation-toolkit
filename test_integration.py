@@ -1,10 +1,10 @@
-import unittest
+import os
+import pytest
 
-class TestPortfolioBase(unittest.TestCase):
-    def test_logic_check(self):
-        # Простая проверка логики, которая ВСЕГДА проходит
-        self.assertEqual(1, 1)
-        print("CI/CD Pipeline is successfully verified!")
+def test_log_file_exists():
+    # Проверяем, что система логирования создала файл
+    assert os.path.exists("beast_sense.log") == True
 
-if __name__ == "__main__":
-    unittest.main()
+def test_best_coin_saved():
+    # Проверяем, что цель была найдена и записана
+    assert os.path.exists("best_coin.txt") == True

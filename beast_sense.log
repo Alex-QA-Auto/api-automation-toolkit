@@ -1,0 +1,10 @@
+2026-01-13 19:01:07,874 - INFO - --- 🧠 BEAST-SENSE: START DEEP ANALYSIS ---
+2026-01-13 19:01:08,151 - INFO - HTTP Request: GET https://api.bybit.com/v5/market/tickers?category=linear&symbol=BTCUSDT "HTTP/1.1 200 OK"
+2026-01-13 19:01:08,152 - INFO - ✅ BTCUSDT: Волатильность 3.26%
+2026-01-13 19:01:08,325 - INFO - HTTP Request: GET https://api.bybit.com/v5/market/tickers?category=linear&symbol=ETHUSDT "HTTP/1.1 200 OK"
+2026-01-13 19:01:08,326 - INFO - ✅ ETHUSDT: Волатильность 4.29%
+2026-01-13 19:01:08,503 - INFO - HTTP Request: GET https://api.bybit.com/v5/market/tickers?category=linear&symbol=SOLUSDT "HTTP/1.1 200 OK"
+2026-01-13 19:01:08,504 - INFO - ✅ SOLUSDT: Волатильность 4.94%
+2026-01-13 19:01:09,006 - INFO - HTTP Request: GET https://api.bybit.com/v5/market/tickers?category=linear&symbol=XRPUSDT "HTTP/1.1 200 OK"
+2026-01-13 19:01:09,008 - INFO - ✅ XRPUSDT: Волатильность 3.74%
+2026-01-13 19:01:09,008 - INFO - 🎯 ЛУЧШАЯ ЦЕЛЬ ДЛЯ ДЕМО: SOLUSDT (4.94%)
